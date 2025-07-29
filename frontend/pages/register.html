@@ -13,15 +13,18 @@
             <input class="button-open" type="button" value="Adicionar Processo">
 
             <dialog class="modal">
-                <form>
-                    <label class="server">Nome do Servidor:</label>
-                    <input type="text">
+                <form method="dialog">
+                    <label class="server" for="server-name">Nome do Servidor:</label>
+                    <input type="text" id="server-name" required>
 
-                    <label class="credit-day">Dia do Crédito:</label>
-                    <input type="date">
+                    <label class="process-id" for="process-number">Número do Processo:</label>
+                    <input type="text" id="process-number" required>
 
-                    <label class="observations">Observações:</label>
-                    <textarea style="resize: none" rows="4" cols="50" placeholder="Deixe suas observações aqui..."></textarea>
+                    <label class="credit-day" for="credit-day">Dia do Crédito:</label>
+                    <input type="date" id="credit-day" required>
+
+                    <label class="observations" for="observations">Observações:</label>
+                    <textarea id="observations" style="resize: none" rows="4" cols="50" placeholder="Deixe suas observações aqui..."></textarea>
                 
                     <input class="button-add" type="button" value="Adicionar">
                     <input class="button-close" type="button" value="Sair">
@@ -30,10 +33,8 @@
         </div>
 
         <div class="show-processes">
-            <p id="any-process">Não há processos cadastrados!</p>
-            <ul id="processes-list">
-
-            </ul>
+            <p class="empty-message">Não há processos cadastrados!</p>
+            <ul id="processes-list"></ul>
         </div>
     </div>
     <script src="../dom/index.js"></script>

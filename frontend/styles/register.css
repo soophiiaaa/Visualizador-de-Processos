@@ -9,6 +9,7 @@
     --button-hover-color: #1B661B;
     --button-close-color: #FF0000;
     --button-close-hover-color: #CC0C0C;
+    --backdrop: rgba(34, 34, 34, 0.45);
     --shadows: rgba(0, 0, 0, 0.1);
 }
 
@@ -98,4 +99,9 @@ dialog.modal {
     padding: 2rem;
     z-index: 1001;
     overflow: hidden;
+}
+
+dialog.modal::backdrop {
+    background: var(--backdrop);
+    backdrop-filter: blur(1px);
 }
