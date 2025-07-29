@@ -7,6 +7,8 @@
     --border-color: #CCC;
     --button-color: #228B22;
     --button-hover-color: #1B661B;
+    --button-close-color: #FF0000;
+    --button-close-hover-color: #CC0C0C;
     --shadows: rgba(0, 0, 0, 0.1);
 }
 
@@ -38,7 +40,7 @@ input, button, label {
     text-align: center;
 }
 
-.button-open, .button-close {
+.button-open, .button-add {
     width: 200px;
     height: 45px;
     background-color: var(--button-color);
@@ -47,9 +49,23 @@ input, button, label {
     border-radius: 10px;
 }
 
-.button-open:hover, .button-close:hover {
+.button-open:hover, .button-add:hover {
     cursor: pointer;
     background-color: var(--button-hover-color);
+}
+
+.button-close {
+    width: 200px;
+    height: 45px;
+    background-color: var(--button-close-color);
+    color: var(--backg-color);
+    border: none;
+    border-radius: 10px;
+}
+
+.button-close:hover {
+    cursor: pointer;
+    background-color: var(--button-close-hover-color);
 }
 
 dialog.modal form {
