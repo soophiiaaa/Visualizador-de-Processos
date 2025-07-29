@@ -10,9 +10,9 @@
     <div class="container">
         <div class="add-processes-container">
             <h1>Processos:</h1>
-            <input class="button" type="button" value="Adicionar Processo">
+            <input class="button-open" type="button" value="Adicionar Processo">
 
-            <div id="process-form" class="hidden">
+            <dialog class="modal">
                 <form>
                     <label class="server">Nome do Servidor:</label>
                     <input type="text">
@@ -23,9 +23,9 @@
                     <label class="observations">Observações:</label>
                     <textarea rows="4" cols="50" placeholder="Deixe suas observações aqui..."></textarea>
                 
-                    <input class="button" onclick="addProcess()" value="Adicionar">
-                </form>
-            </div>
+                    <input class="button-close" type="button" value="Adicionar">
+                </form>    
+            </dialog>
         </div>
 
         <div class="show-processes">
@@ -35,5 +35,6 @@
             </ul>
         </div>
     </div>
+    <script src="../dom/index.js"></script>
 </body>
 </html>
