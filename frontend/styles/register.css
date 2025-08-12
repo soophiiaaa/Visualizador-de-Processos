@@ -1,107 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-    --font-color: #1C1C1C;
-    --second-color: #A0A0A0;
-    --backg-color: #FFF;
-    --border-color: #CCC;
-    --button-color: #228B22;
-    --button-hover-color: #1B661B;
-    --button-close-color: #FF0000;
-    --button-close-hover-color: #CC0C0C;
-    --backdrop: rgba(34, 34, 34, 0.45);
-    --shadows: rgba(0, 0, 0, 0.1);
+  --font-color: #1c1c1c;
+  --second-color: #a0a0a0;
+  --backg-color: #fff;
+  --border-color: #ccc;
+  --button-color: #228b22;
+  --button-hover-color: #1b661b;
+  --button-close-color: #ff0000;
+  --button-close-hover-color: #cc0c0c;
+  --backdrop: rgba(34, 34, 34, 0.45);
+  --shadows: rgba(0, 0, 0, 0.1);
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Poppins', 'sans-serif';
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", "sans-serif";
+  box-sizing: border-box;
 }
 
-input, button, label {
-    font-family: 'Poppins', 'sans-serif';
+input,
+button,
+label {
+  font-family: "Poppins", "sans-serif";
 }
 
 .add-processes-container {
-    padding-top: 35px;
-    display: flex;
-    justify-content: space-around;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .show-processes p {
-    color: var(--second-color);
-    font-weight: bold;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    text-align: center;
+  color: var(--second-color);
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  text-align: center;
 }
 
-.button-open, .button-add {
-    width: 200px;
-    height: 45px;
-    background-color: var(--button-color);
-    color: var(--backg-color);
-    border: none;
-    border-radius: 10px;
+.button-open,
+.button-add {
+  width: 200px;
+  height: 45px;
+  background-color: var(--button-color);
+  color: var(--backg-color);
+  border: none;
+  border-radius: 10px;
 }
 
-.button-open:hover, .button-add:hover {
-    cursor: pointer;
-    background-color: var(--button-hover-color);
+.button-open:hover,
+.button-add:hover {
+  cursor: pointer;
+  background-color: var(--button-hover-color);
 }
 
 .button-close {
-    width: 200px;
-    height: 45px;
-    background-color: var(--button-close-color);
-    color: var(--backg-color);
-    border: none;
-    border-radius: 10px;
+  width: 200px;
+  height: 45px;
+  background-color: var(--button-close-color);
+  color: var(--backg-color);
+  border: none;
+  border-radius: 10px;
 }
 
 .button-close:hover {
-    cursor: pointer;
-    background-color: var(--button-close-hover-color);
+  cursor: pointer;
+  background-color: var(--button-close-hover-color);
 }
 
 dialog.modal form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border: none;
 }
 
 dialog.modal input,
 dialog.modal textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 dialog.modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    max-width: 90vh;
-    background: var(--backg-color);
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px var(--shadows);
-    padding: 2rem;
-    z-index: 1001;
-    overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 90vh;
+  background: var(--backg-color);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px var(--shadows);
+  padding: 2rem;
+  z-index: 1001;
+  overflow: hidden;
 }
 
 dialog.modal::backdrop {
-    background: var(--backdrop);
-    backdrop-filter: blur(1px);
+  background: var(--backdrop);
+  backdrop-filter: blur(1px);
 }
